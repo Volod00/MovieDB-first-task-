@@ -1,8 +1,4 @@
 let numberOfFilms = +prompt("How many movies have you already watched?","");
-let movieName = prompt("which movie did you watch last?",""),
-     rank = +prompt("Please rank it"),
-     movieNameTwo = prompt("which movie did you watch last?",""),
-     rankTwo = +prompt("Please rank it");
 
 const personalMovieDB = {
         count:numberOfFilms,
@@ -12,7 +8,27 @@ const personalMovieDB = {
         private:false
 };
 
-personalMovieDB.movie[movieName] = rank;
-personalMovieDB.movie[movieNameTwo] = rankTwo;
+for (let i = 0; i < 3; i++){
+        let  movieName = prompt("which movie did you watch last?",""),
+             rank = +prompt("Please rank it");
+             
+        if (movieName.length > 50 && movieName == "" && rank =="" && movieName == null && rank == null){
+                console.log("error");
+                i--;
+        } else {
+         return personalMovieDB.movie[movieName] = rank;
+         console.log('done')
+        }
+   }
 
-console.log(personalMovieDB)
+
+if (personalMovieDB.count < 10){
+        console.log("You wathced not many movies")
+} else if (personalMovieDB.count <=30){
+        console.log("You are classic cinema viewer")
+} else if (personalMovieDB.count > 30){
+        console.log("You are movie fan")
+} else {
+        console.log("Error") 
+}
+
