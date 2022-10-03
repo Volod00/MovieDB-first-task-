@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-let numberOfFilms = +prompt("How many movies have you already watched?","");
-let movieName = prompt("which movie did you watch last?",""),
-     rank = +prompt("Please rank it"),
-     movieNameTwo = prompt("which movie did you watch last?",""),
-     rankTwo = +prompt("Please rank it");
-
-const personalMovieDB = {
-        count:numberOfFilms,
-        movie:{},
-        actors:{},
-        genres:[],
-        private:false
-};
-
-personalMovieDB.movie[movieName] = rank;
-personalMovieDB.movie[movieNameTwo] = rankTwo;
-=======
 const numberOfFilms = +prompt("How many movies have you already watched?","");
 
 const personalMovieDB = {
@@ -25,6 +7,7 @@ const personalMovieDB = {
         genres:[],
         private:false
 };
+console.log(personalMovieDB)
 
 for (let i = 0; i < 2; i++){
         let  movieName = prompt("which movie did you watch last?",""),
@@ -37,7 +20,7 @@ for (let i = 0; i < 2; i++){
                 console.log('error');
         }
    };
-
+   console.log(personalMovieDB);
 
 if (personalMovieDB.count < 10){
         console.log("You wathced not many movies");
@@ -49,4 +32,3 @@ if (personalMovieDB.count < 10){
         console.log("Error");
 };
 
->>>>>>> d1a5d9a76b76f19d045ccfff40f513057956fe4c
