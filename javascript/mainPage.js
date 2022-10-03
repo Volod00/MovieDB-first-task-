@@ -20,8 +20,7 @@ for (let i = 0; i < 2; i++){
                 console.log('error');
         }
    };
-   console.log(personalMovieDB);
-
+ 
 if (personalMovieDB.count < 10){
         console.log("You wathced not many movies");
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count <=30){
