@@ -7,7 +7,6 @@ function start() {
                 numberOfFilms = +prompt("How many movies have you already watched?",""); 
         }
 }
-
 start();
 
 const personalMovieDB = {
@@ -33,8 +32,7 @@ function rememberMyFilms(){
                 }
            };
 }
-
-rememberMyFilms();
+// rememberMyFilms();
 
 function detectLevel(){
                 if (personalMovieDB.count < 10){
@@ -47,7 +45,22 @@ function detectLevel(){
                 console.log("Error");
         };
   }
-detectLevel(); 
+// detectLevel(); 
 
+function showMyDB(hidden){
+        if(!hidden){
+                console.log(personalMovieDB)
+        }
+   };
+showMyDB(personalMovieDB.private);
 
+function writeYourGenres(){
+       for(let i = 1; i<=3; i++){
+        let favGenre = prompt(`"Which movie genre do you like at number ${i}?"`," ");
+        personalMovieDB.genres[i-1]=favGenre;
+   }
+}
+writeYourGenres();
+
+console.log(personalMovieDB)
 
