@@ -70,3 +70,49 @@ const personalMovieDB = {
 console.log(personalMovieDB);
 
 console.log(Object.keys(personalMovieDB).length);
+
+// // Do String:
+// // console.log(typeof(String(5)));
+// // console.log(typeof(String(null)));
+// // console.log(typeof(`https://nads.gov.ua/+5`));
+
+// // // To Number:
+// // console.log(typeof(Number("5")));
+// // console.log(typeof((+"5")));
+// // console.log(typeof(parseInt("15px", 10)));
+
+// // //to Boolean:
+// // 0, null, '', undefined, NaN = false
+
+// // let switcher = 0;
+// // if (switcher){
+// //         console.log("Working...");
+// // }
+
+// // let y = 1;
+// // let x = y = 2;
+// // console.log(x);
+// // alert(x);
+
+// // console.log(typeof([]+1+2));
+
+// // alert("1"[0]);
+
+// // console.log(2 && 1 && null && 0 && undefined);
+// // console.log(typeof(!!(a && b));
+// //  console.log(a && b);
+
+// // alert( null || 2 && 3 || 4 ); 
+// // let a = [1, 2, 3]; 
+// // let b = [1, 2, 3]; 
+// // console.log(a==b);
+
+// // alert(+"infinity");
+
+// // const a = "Ёжик"; 
+// // const b = "яблоко";
+
+// // console.log(a.length);
+// // console.log(b.length);
+
+// console.log(0 && 1|| 0 || NaN || undefined || true || false); 
